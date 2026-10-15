@@ -215,7 +215,6 @@ export default function App() {
     </header>
 
     <main className="mx-auto max-w-5xl px-4 pb-28 pt-5">
-      <div className={`${card} mb-5 p-3 text-sm ${muted}`}>{t.browserStorage}</div>
 
       {tab === "dashboard" && <section className="space-y-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"><div><h1 className="text-3xl font-black">{t.dashboard}</h1><p className={`mt-1 text-sm ${muted}`}>{t.selectedMonth}</p></div><input type="month" value={selectedMonth} onChange={e => setSelectedMonth(e.target.value)} className={`${input} sm:w-auto`} /></div>
